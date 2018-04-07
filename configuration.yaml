@@ -30,6 +30,13 @@ frontend:
 
 discovery:
 
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+
 updater:
   include_used_components: true
 
@@ -60,6 +67,12 @@ device_tracker:
 logger: !include logger.yaml
 
 recorder: !include recorder.yaml
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables a map showing the location of tracked devices
+map:
 
 nest:
   client_id: !secret nest_client_id
