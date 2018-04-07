@@ -1,0 +1,9 @@
+presence:
+  name: Presence
+  view: no
+  entities:
+    - device_tracker.katiesiphone
+    - device_tracker.jacks_phone
+    - device_tracker.jodiesiphone
+    - device_tracker.johns_phone
+    - device_tracker.donnasiphone
