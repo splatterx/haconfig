@@ -1,0 +1,6 @@
+
+- name: Landing Night Light
+  entities:
+    light.upstairs:
+      state: on
+      brightness: 100
