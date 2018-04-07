@@ -1,0 +1,226 @@
+Climate:
+  view: yes
+  icon: mdi:weather-partlycloudy
+  entities:
+    - group.temperature 
+    - group.outside
+    
+
+Security:
+  view: yes
+  icon: mdi:lock-open-outline
+  entities:
+    - group.doors_and_windows
+    - group.motion_detectors
+    - group.armed_sensors
+    - group.presence
+    - group.motion_outdoor_camera_all
+    - group.outdoor_cameras
+
+
+motion_outdoor_camera_all:
+  name: Motion Outdoor (Camera)
+  view: no
+  icon: mdi:camcorder
+  entities:
+    - sensor.motion_outdoor_camera_front_window
+
+outdoor_cameras:
+  view: no
+  icon: mdi:camcorder
+  entities:
+    - camera.Front_Door_Camera
+
+Network:
+  view: yes
+  icon: mdi:network
+  entities:
+    - group.controllers
+    - group.computers_and_tables
+    - group.amazon_echo_and_dot
+    - group.infrastructure
+    - group.media_devices
+
+lights:
+  view: no
+  icon: mdi:lightbulb-on-outline
+  name: Lights
+  entities:
+    - light.breakfast
+    - light.dining
+    - light.front_door
+    - light.hall_front
+    - light.hall_center
+    - light.horse
+    - light.jacks_light
+    - light.upstairs
+    - light.office
+    - switch.kitchen_led
+    - switch.kitchen_light
+    - switch.garden_lampost
+
+automation:
+  name: Automation
+  view: yes
+  icon: mdi:autorenew
+  entities:
+    - group.all_automations
+    - group.all_scripts
+    - group.all_scenes
+
+doors_and_widows:
+  name: Doors & Windows
+  view: no
+  entities:
+    - binary_sensor.back_door_64
+    - binary_sensor.conservatory_door_38
+    - binary_sensor.front_door_104
+    - binary_sensor.garage__inside_door_65
+    - binary_sensor.utility_door_123
+    - binary_sensor.katies_window_63
+
+nest:
+  view: no
+  icon: mdi:nest
+  name: Nest
+  entities:
+    - climate.wwn_thermostat__hallway_116
+    - sensor.wwn_humidity__hallw_117
+    - climate.hallway
+    - binary_sensor.hallway_thermostat_fan
+    - binary_sensor.hallway_thermostat_online
+    - binary_sensor.hallway_thermostat_fan
+    - binary_sensor.hallway_thermostat_has_leaf
+    - binary_sensor.hallway_thermostat_is_locked
+    - binary_sensor.hallway_thermostat_is_using_emergency_heat
+    - sensor.hallway_thermostat_humidity
+    - sensor.hallway_thermostat_hvac_state
+    - sensor.hallway_thermostat_operation_mode
+    - sensor.hallway_thermostat_target
+    - sensor.hallway_thermostat_temperature
+
+
+armed_sensors:
+  name: Armed Sensors
+  entities:
+    - switch.back_door_64
+    - switch.conservatory_door_38
+    - switch.front_door_104
+    - switch.garage__inside_door_65
+    - switch.utility_door_123
+    - switch.katies_window_63
+    - switch.dining_eye_26
+    - switch.hall_eye_16
+    - switch.kitchen_eye_20
+    - switch.landing_eye_131
+    - switch.lounge_eye_34
+
+presence:
+  name: Presence
+  view: no
+  entities:
+    - device_tracker.katiesiphone
+    - device_tracker.jacks_phone
+    - device_tracker.jodiesiphone
+    - device_tracker.johns_phone
+    - device_tracker.donnasiphone
+
+media_devices:
+  name: Media Devices
+  view: no
+  entities:
+    - device_tracker.skyq
+    - device_tracker.lgtv_1
+    - device_tracker.lgwebostv_2
+    - device_tracker.lg_sj812b3
+    - device_tracker.wiiu
+    - device_tracker.firestick
+
+controllers:
+  name: Controllers
+  view: no
+  entities:
+    - device_tracker.zen_1
+    - device_tracker.philipshue
+    - device_tracker.nest_thermostat
+    - device_tracker.vera_plus
+    - device_tracker.house_control
+    - device_tracker.broadlink
+    - device_tracker.shodan
+
+temperature:
+  name: House
+  view: no
+  entities:
+    - sensor.dining_temp_27
+    - sensor.hallway_thermostat_temperature
+    - sensor.lounge_temp_35
+    - sensor.hall_temp_17
+    - sensor.kitchen_temp_21
+    - sensor.landing_temp_132
+    - climate.hallway
+
+outside:
+  name: Outdoors
+  view: no
+  entities:
+    - sensor.high_temperature_111
+    - sensor.temperature_109
+    - sensor.low_temperature_110
+    - sensor.humidity_112
+
+computers_and_tables: 
+  name: Computers & Tables
+  view: no
+  entities:
+    - device_tracker.donna_tablet
+    - device_tracker.allburg8
+    - device_tracker.desktopi9oke1i
+    - device_tracker.house_control
+    - device_tracker.john_surface
+    - device_tracker.jodiesmbp
+    - device_tracker.kindle_old
+    - device_tracker.katie_tablet
+    - device_tracker.riley_tablet
+    - device_tracker.john_kindle
+    - device_tracker.donna_ipad
+
+amazon_echo_and_dot:
+  name: Echo & Dot
+  view: no
+  entities:
+    - device_tracker.johns_echo
+    - device_tracker.kitchen_dot
+    - device_tracker.jacks_echo
+
+infrastructure:
+  name: Infrastructure
+  view: no
+  entities:
+    - device_tracker.liberator
+    - device_tracker.hpa60b29
+    - device_tracker.orac
+    - device_tracker.wifi_extender
+
+motion_detectors:
+  name: Eyes
+  view: no
+  entities:
+    - binary_sensor.dining_eye_26
+    - binary_sensor.hall_eye_16
+    - binary_sensor.kitchen_eye_20
+    - binary_sensor.landing_eye_131
+    - binary_sensor.lounge_eye_34
+
+lux:
+  name: Lux
+  view: no
+  entities:
+    - sensor.dining_lux_28
+    - sensor.hall_lux_18
+    - sensor.kitchen_lux_22
+    - sensor.landing_lux_133
+    - sensor.lounge_lux_36
+
+
+
