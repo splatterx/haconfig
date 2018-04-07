@@ -54,8 +54,8 @@ vera:
 device_tracker:
   - platform: asuswrt
     host: router_host
-    username: !router_username
-    password: !router_password
+    username: !secret router_username
+    password: !secret router_password
     
 logger: !include logger.yaml
 
