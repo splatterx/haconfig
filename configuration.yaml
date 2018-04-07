@@ -36,21 +36,11 @@ updater:
 sun:
 hue:
   bridges:
-    - host: 192.168.10.75
+    - host: 192.168.1.9
       filename: phue.conf
       allow_unreachable: true
       allow_hue_groups: false
 
-    - host: 192.168.10.76
-      filename: phue2.conf
-      allow_unreachable: true
-      allow_hue_groups: false
-
-
-# emulated_hue:
-#   host_ip: 192.168.10.10
-#   listen_port: 8300
-#   expose_by_default: false
 
 logger: !include logger.yaml
 
