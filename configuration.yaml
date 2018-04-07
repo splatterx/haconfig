@@ -13,6 +13,7 @@ homeassistant:
   packages: !include_dir_named packages
 
 config:
+
 http:
   base_url: !secret http_base_url
   server_port: !secret http_port
@@ -27,13 +28,13 @@ http:
 frontend:
   javascript_version: latest
 
-
 discovery:
 
 updater:
   include_used_components: true
 
 sun:
+
 hue:
   bridges:
     - host: 192.168.1.9
@@ -41,7 +42,21 @@ hue:
       allow_unreachable: true
       allow_hue_groups: false
 
+switch RMPro:
+  - platform: broadlink
+    host: !secret rmpro_host
+    mac: !secret rmpro_mac
+    type: rm2_pro_plus
+    
+vera:
+  vera_controller_url: !secret vera_url
 
+device_tracker:
+  - platform: asuswrt
+    host: router_host
+    username: !router_username
+    password: !router_password
+    
 logger: !include logger.yaml
 
 recorder: !include recorder.yaml
