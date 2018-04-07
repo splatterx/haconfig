@@ -1,0 +1,52 @@
+binary_sensor.landing_eye_131:
+  show_last_changed: true
+group.all_automations:
+  hidden: false
+  order: 1
+group.all_scripts:
+  order: 2
+  hidden: false
+sensor.dimmer_1:
+  friendly_name: Hue Dimmer
+  icon: mdi:remote
+binary_sensor.sky_q:
+  icon: mdi:satellite
+group.all_lights:
+  hidden: true
+device_tracker.rmproplus42e5c6:
+  friendly_name: Slave
+device_tracker.desktopi9oke1i:
+  friendly_name: Jack's PC
+history_graph.indoor_temp:
+  friendly_name: Temperature History
+  hours_to_show: 48
+  icon: mdi:temperature-celsius
+history_graph.outdoor_temp:
+  friendly_name: Outside Temperature
+  hours_to_show: 48
+  icon: mdi:temperature-celsius
+history_graph.humidity:
+  friendly_name: Humidity
+  hours_to_show: 48
+history_graph.lux:
+  friendly_name: Lux
+  hours_to_show: 48
+history_graph.internet:
+  friendly_name: Internet
+  hours_to_show: 240
+switch.jacks_socket:
+  icon: mdi:power
+  fiendly_name: Jacks Socket
+  emulated_hue_hidden: false
+  emulated_hue_name: Jacks Socket
+switch.zap2:
+  icon: mdi:power
+  emulated_hue_hidden: false
+switch.kitchen_light:
+  icon: mdi:ceiling-light
+  emulated_hue_hidden: false
+switch.kitchen_led:
+  icon: mdi:led-outline
+  emulated_hue_hidden: false
+device_tracker.katiesiphone:
+  show_last_changed: true
