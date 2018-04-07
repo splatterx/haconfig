@@ -1,2 +1,2 @@
 # haconfig
-# haconfig
+# Home assist config
