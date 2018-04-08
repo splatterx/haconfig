@@ -23,11 +23,15 @@ notify:
     platform: rest
     resource: !secret house_control_frontG
     
-  - name: Imperi_alert
+  - name: Imperi_alert1
     platform: command_line
-    command: !secret house_control_alert
+    command: !secret house_control_alert1
 
-  - name: Imperi_notify
+- name: Imperi_alert5
+    platform: command_line
+    command: !secret house_control_alert5
+
+- name: Imperi_notify
     platform: command_line
     command: !secret house_control_notify
 
