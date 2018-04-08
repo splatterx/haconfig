@@ -1,0 +1,12 @@
+rfxtrx:
+  device: /dev/ttyUSB0
+  debug: True
+
+switch:
+  - platform: rfxtrx
+    automatic_add: True
+
+binary_sensor:
+  - platform: rfxtrx
+    automatic_add: True
+
