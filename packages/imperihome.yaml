@@ -10,3 +10,24 @@ notify:
   - name: ImperiPage2
     platform: rest
     resource: !secret house_control_page2
+
+  - name: Imperi_CAM_FrontD
+    platform: rest
+    resource: !secret house_control_frontD
+
+  - name: Imperi_CAM_FrontW
+    platform: rest
+    resource: !secret house_control_frontW
+
+  - name: Imperi_CAM_FrontG
+    platform: rest
+    resource: !secret house_control_frontG
+    
+  - name: Imperi_alert
+    platform: rest
+    resource: !secret house_control_alert
+
+  - name: Imperi_notify
+    platform: rest
+    resource: !secret house_control_notify
+
