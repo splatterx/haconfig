@@ -1,4 +1,12 @@
 notify:
-  - name: Imperi2
+  - name: ImperiPage0
+    platform: rest
+    resource: http://192.168.1.179:8080/api/rest/dashboard/gotopage?pageIdx=0
+
+  - name: ImperiPage1
+    platform: rest
+    resource: http://192.168.1.179:8080/api/rest/dashboard/gotopage?pageIdx=1
+
+  - name: ImperiPage2
     platform: rest
     resource: http://192.168.1.179:8080/api/rest/dashboard/gotopage?pageIdx=2
