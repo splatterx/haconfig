@@ -60,7 +60,7 @@ vera:
 
 device_tracker:
   - platform: asuswrt
-    host: router_host
+    host: !secret router_host
     username: !secret router_username
     password: !secret router_password
     
@@ -82,11 +82,11 @@ climate:
   platform: nest
 
 group: !include_dir_merge_named group
-device_tracker: !include_dir_merge_list device_tracker
+#device_tracker: !include_dir_merge_list device_tracker
 sensor: !include_dir_merge_list sensor
 automation: !include_dir_merge_list automation
 scene: !include_dir_merge_list scene
 switch: !include_dir_merge_list switch
 script: !include_dir_merge_named script
-input_boolean: !include_dir_merge_named input_boolean
+#input_boolean: !include_dir_merge_named input_boolean
 shell_command: !include_dir_merge_named shell_command

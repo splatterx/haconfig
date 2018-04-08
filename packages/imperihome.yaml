@@ -1,5 +1,4 @@
-switch:
-  - platform: rest
-    resource: http://192.168.1.179:8080/api/rest/dashboard/gotopage?pageIdx=0
-    timeout: 1
-    
+notify:
+  - name: Imperi2
+    platform: rest
+    resource: http://192.168.1.179:8080/api/rest/dashboard/gotopage?pageIdx=2
