@@ -31,4 +31,5 @@ automation:
     trigger:
     - event: sunrise
       platform: sun
+
  
