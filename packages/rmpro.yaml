@@ -1,5 +1,5 @@
 switch:
-  platform: broadlink
+  - platform: broadlink
     host: !secret rmpro_host
     mac: !secret rmpro_mac
     type: rm2_pro_plus
