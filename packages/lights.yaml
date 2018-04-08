@@ -1,4 +1,3 @@
-
 automation:
   - action:
     - data:
@@ -31,4 +30,4 @@ automation:
     id: '1515375525608'
     trigger:
     - event: sunrise
-  platform: sun
+      platform: sun
