@@ -48,13 +48,7 @@ hue:
       filename: phue.conf
       allow_unreachable: true
       allow_hue_groups: false
-
-switch RMPro:
-  - platform: broadlink
-    host: !secret rmpro_host
-    mac: !secret rmpro_mac
-    type: rm2_pro_plus
-    
+   
 vera:
   vera_controller_url: !secret vera_url
 
