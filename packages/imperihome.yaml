@@ -27,11 +27,11 @@ notify:
     platform: command_line
     command: !secret house_control_alert1
 
-- name: Imperi_alert5
+  - name: Imperi_alert5
     platform: command_line
     command: !secret house_control_alert5
 
-- name: Imperi_notify
+  - name: Imperi_notify
     platform: command_line
     command: !secret house_control_notify
 
