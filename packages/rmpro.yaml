@@ -1,4 +1,4 @@
-switch RMPro:
+switch:
   - platform: broadlink
     host: !secret rmpro_host
     mac: !secret rmpro_mac
