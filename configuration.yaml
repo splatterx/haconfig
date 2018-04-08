@@ -75,7 +75,7 @@ nest:
 climate:
   platform: nest
 
-switch:
+switch rm:
   platform: broadlink
   host: !secret rmpro_host
   mac: !secret rmpro_mac
