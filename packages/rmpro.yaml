@@ -4,3 +4,62 @@ switch:
     mac: !secret rmpro_mac
     type: rm2_pro_plus
     timeout: 15
+    switches:
+      zap1:
+        friendly_name: "Jacks Socket"
+        command_on: 'sgkyAAcTEgcGExIHBhMSBwYTBhMHExIHBhMSBwYTEgcGExIHBhMGExIHEwcGEwYTEgcSBwa6AAAAAAAA'
+        command_off: 'sgcyAAYTEwcGExIHBhMSBwcTBxMHEhMHBhMSBwcTEgcHExIHBhMHEhMGEgcSBxIHBxMHEga6AAAAAAAA'
+      zap2:
+        friendly_name: "Garden Lampost"
+        command_on: 'sgkyAAYTEgcGExIHBhMSBwYTBhMGExIHBhMSBwYTEgcHExIHEgcSBwYTBhMHEwYTEgcSBwa6AAAAAAAA'
+        command_off: 'sggyAAYTEgcGExIHBhMSBwYTBhIGExIHBhMTBwYTEgcGExIHEgcSBwYTBhMSBxIHBhMGEwa6AAAAAAAA'
+      zap3:
+        friendly_name: "Zap Socket 3"
+        command_on: 'sgkyAAcTEgcHEhIHBhMTBwYTBhMHExIHBhMSBwcTEgcSBxIHBhMHEgcTBxIHEwYTEgcSBwa6AAAAAAAA'
+        command_off: 'sgcyAAYTEgcHExIHBhMSBwYTBxIHExIHBhMSBwcTEgcTBxIHBhMGEwcTBhMSBxIHBhMGEwe6AAAAAAAA'
+      zap4:
+        friendly_name: "Zap Socket 4"
+        command_on: 'sgkyAAYTEgcGExIHBhMSBwcTBxMHExMHBxMTBxMHEwcHExMHBxMGEwcTBhMGEwYTEgcSBwa7AAAAAAAA'
+        command_off: 'sgcyAAYTEwcGExMHBxMSBwYTBhMGExIHBhMSBxIHEgcGExIHBhMGEwYTBhMSBxIHBxMGEwa6AAAAAAAA'
+      zap5:
+        friendly_name: "Zap Socket 5"
+        command_on: 'sgkyAAcTEgcHEhMHBxITBgcSBxMHEhIHEgcTBgcTEwYHExMGBxMHEwcSBxIHEwcSEwcSBwe6AAAAAAAA'
+        command_off: 'sgkyAAcTEwYHExIHBxITBwcSBxMHEhMHEgcSBwcSEwcHEhMGBxIHEwcSBxISBxMGBxMHEge6AAAAAAAA'
+      kitchen_light:
+        friendly_name: "Kitchen Light"
+        command_on: 'sgg0AAsiIQwhDCEMCyILIgwiIQwLIiEMCyILIgsAAVULIgsiCyIiDAsiCyIhDAsiCyILIgsiCyIAAAAA'
+        command_off: 'sgs0AAsiCyILIiIMDCILIiEMCyILIgsiDCIMIgsiIgwiDCIMCyILIgsiIgwiDAwiCyILIgsAAVYAAAAA'
+      kitchen_led:
+        friendly_name: "Kitchen LED"
+        command_on: 'sgCgAgdaBwsGLQcLBi4GCwctBi0GDAcLBywHCwctBgwGLQcsBwwGDAYtBy0GCwctBgwGLQcLBywHCwcLBy0GCwctBywHDAYtBgwHLQYMBi0GDAYLBy0GDAYtBwsGLgYtBgwGDAYtBy0GDAYLBy0GDAYtBy0GDAYLBy0GDAcsBwsGLgYLBy0GAAFUBlsGCwctBgsHLQcLBi0HLQYMBgsHLQcL
+Bi0HCwctBi0HCwcLBi4GLQYMBi0GDAcsBwwGLQYMBgwGLQYMBi0HLAcMBywHCwctBgsHLQYMBgwGLQYLBy0GDAcsBy0GDAYMBi4GLQYMBgwGLQYMBi0HLQYMBgwGLQYMBi0HCwYtBwsHLAcAAVMHWgcLBywHCwctBgsHLQYuBgsGDAYuBgsHLQYMBi0GLQcMBgsHLQYtBwsHLAcLBy0GDAYtBgwGDAYtBgwGLQctBgwGL
+QcMBi0GCwcsBwwGCwctBgwGLQcLBi4GLQcLBgwGLQctBgwGCwctBgwGLQcsBwsHCwctBgwGLQYMBi0HCwcsBwABUwZbBgsHLQYMBi4GCwYuBi0GDAYMBi0HCwYuBgsGLQctBgwHCwYtBy0GCwctBgwGLQYMBywHDAYLBy0GCwctBi0GDQYtBgwGLQYMBywHCwcLBi4GCwctBgsHLQYtBwsHCwYuBi0GDAYMBi0GDAYuBi
+0GDAYMBi0GDAYtBgwGLgYLBy0GAAFTB1oGDAYtBwsGLQcLBy0GLQcLBgwGLQcLBi0HCwYuBi0GDAcLBi4FLgYMBi0GDAYtBgwGLQcMBgsGLgYLBy0GLQcLBi4GDAYtBgwEMQYMBgwGLgUMBi0HDAUuBi0GDQUMBi4GLQYMBgsHLgUMBi0HLQQEBAwGDAUuBgsHLQYMBi4FDAYtBgAF3AAAAAAAAAAA'
+        command_off: 'sgCeAgdaBwsGLQcLBy0GCwctBi0GDAYMBywHCwcsBwsHLQYtBg0GCwctBi0HCwcsBwsHLAcMBi0GDAcLBi0HCwYtBy0GDAcsBwsHLQYMBi0HCwcLBi0HCwYuBgsHLQYtBgwHCwYuBi0HCwcLBi0HCwYuBgsHLQYMBi0HCwYtBwsHLAcLBy0GAAFUBlsGDAYtBgwGLQcLBywHLQYMBgsHLQY
+MBi0HCwYtBy0GDAcLBi0HLAcLBy0GDAYtBwsHLQYLBwsHLQYLBy0GLQcLBy0GDAYtBgwHLAcLBwsHLAcMBi0GDAYtBi0HCwcLBy0GLQcLBwsGLgYLBi4GCwctBgwGLQcLBi4GCwYuBgsHLQYAAVQGWgcLBy0GCwctBgwGLQctBgsHCwctBgwGLQYMBi0HLAcMBgwGLQctBgsHLAcMBi0GDAcsBwsHCwYuBgsHLActBgwH
+LAcLBy0GDAYtBgwHCwYtBwsGLQcMBi0GLQYMBgwGLQctBg0FCwctBwsGLQcLBywHCwctBgsHLQcLBi0HCwcsBgABVAdaBwsGLQcLBi0HCwctBi0GDAYMBi0GDAYtBwsGLQctBg0GCwYuBiwHDAYtBgwHLAcLBywHCwcLBywHCwctBi0HCwctBgwGLQcLBywHCwcLBywHCwctBgsHLQYtBwsHCwYuBi0GDAYMBi0HCwctB
+gsHLQYLBy0HCwYtBgwHLAcLBi4GAAFTB1oGDAYtBwsHLAcLBy0GLQYMBgwGLQcLBy0GCwctBi0GDAcLBywHLQYMBi0HCwYtBwsHLAcLBwsHLQYMBi0GLQcLBy0GDAYtBgwHLAcLBwsGLgYLBy0GCwctBi0GDAYMBi4GLQYMBgwGLQYMBi4GCwYuBgwGLQYMBi0HCwYuBgwGLQYABdwAAAAAAAAAAAAA'
+      lounge_light_toggle:
+        friendly_name: "Lounge Light Toggle"
+        command_on: 'sgAuARwLHBwLChwLHBwLCxwcCwocCxwcCwscChwcCxwLHAsKHRsMGwwbCwscHAsbDBsLHAvHHAscHAsKHAscHAsKHRsMCh0LGxwLCxwLHBsMGwwbCwscHAscCxwKCxwcCxwLHAscCskcCh0bDAodCh0bDAocHAsLHAscGwsLHAscHAsbDBsLCxwcCxwLGwwKHRsLHAscCxwLxhwLHBwLCxwL
+GxwLCxwcCwodChwcCwscCxwcCxwKHAsLHBwLHAsbDAocHAscCxsMGwvJHAocHAsLHAodHAsKHRsMChwLHBwLCxwKHRsMGwscCwscHAscCxwLChwcDBsLHAscC8YdChwcCwscCxwcCwscHAsKHQodGwsLHAscHAscCxwLCh0bDBsLHAsLHBwLHAscCxwKAAXcAAAAAAAAAAAAAA=='
+        command_off: 'sgAuARwLHBwLChwLHBwLCxwcCwocCxwcCwscChwcCxwLHAsKHRsMGwwbCwscHAsbDBsLHAvHHAscHAsKHAscHAsKHRsMCh0LGxwLCxwLHBsMGwwbCwscHAscCxwKCxwcCxwLHAscCskcCh0bDAodCh0bDAocHAsLHAscGwsLHAscHAsbDBsLCxwcCxwLGwwKHRsLHAscCxwLxhwLHBwLCxw
+LGxwLCxwcCwodChwcCwscCxwcCxwKHAsLHBwLHAsbDAocHAscCxsMGwvJHAocHAsLHAodHAsKHRsMChwLHBwLCxwKHRsMGwscCwscHAscCxwLChwcDBsLHAscC8YdChwcCwscCxwcCwscHAsKHQodGwsLHAscHAscCxwLCh0bDBsLHAsLHBwLHAscCxwKAAXcAAAAAAAAAAAAAA=='
+      lounge_light_1:
+        friendly_name: "Lounge Button 1"
+        command_on: 'sg4yAB0LHB0MCx0MHR0LCx0dDAsdCx0dCwwdCx0cDBwLHQwLHR0LHQscDAsdCx0dDB0LHQvIAAAAAAAA'
+        command_off: 'sg4yAB0LHB0MCx0MHR0LCx0dDAsdCx0dCwwdCx0cDBwLHQwLHR0LHQscDAsdCx0dDB0LHQvIAAAAAAAA'
+      lounge_light_2:
+        friendly_name: "Lounge Button 2"
+        command_on: 'sgoyAB0LHR0LCx0LHRwMCx0dDAsdCx0cDAsdCx0cCx0LHAwLHRwMHAwcDAsdHAwLHR0MHAzIAAAAAAAA'
+        command_off: 'sgoyAB0LHR0LCx0LHRwMCx0dDAsdCx0cDAsdCx0cCx0LHAwLHRwMHAwcDAsdHAwLHR0MHAzIAAAAAAAA'
+      lounge_light_3:
+        friendly_name: "Lounge Button 3"
+        command_on: 'sgAuAR0KHBwLCxwLHBwKDBscCwscCxwcCwscChwcCxwLHAsLHBsLHQocCwscCxwcCwocHAvHHAscHAoMHAocHAsLHBwLCxwKHRwKCxwLHBwLHAsbDAocHAscCxwLCxwLHBwKCxwcC8gdChwcCwscCxwcCwscHAoLHAscHAsLHAscHAscChwLCxwcCxwLHAoLHAscHAsLHBwLxhwMGxwLCxwL
+HBwKDBwbCwscCxwcCwscCxwcChwLHAsLHBwLHAsbCwscCxwcCwscHArJHAscGwsLHAscHAsLHBwLCxwLHBwLCxwKHBwLHAscCwscHAscCxsLCxwLHBwLCxwcC8YcCxwcCwscCxwcCwscGwsMGwscHAsLHAscHAscCxwLCxwcChwLHAsLHAscHAsKHB0LAAXcAAAAAAAAAAAAAA=='
+        command_off: 'sgAuAR0KHBwLCxwLHBwKDBscCwscCxwcCwscChwcCxwLHAsLHBsLHQocCwscCxwcCwocHAvHHAscHAoMHAocHAsLHBwLCxwKHRwKCxwLHBwLHAsbDAocHAscCxwLCxwLHBwKCxwcC8gdChwcCwscCxwcCwscHAoLHAscHAsLHAscHAscChwLCxwcCxwLHAoLHAscHAsLHBwLxhwMGxwLCxw
+LHBwKDBwbCwscCxwcCwscCxwcChwLHAsLHBwLHAsbCwscCxwcCwscHArJHAscGwsLHAscHAsLHBwLCxwLHBwLCxwKHBwLHAscCwscHAscCxsLCxwLHBwLCxwcC8YcCxwcCwscCxwcCwscGwsMGwscHAsLHAscHAscCxwLCxwcChwLHAsLHAscHAsKHB0LAAXcAAAAAAAAAAAAAA=='
+      lounge_light_dimmer:
+        friendly_name: "Lounge Dimmer"
+        command_on: 'shgyAB0LHR0LDB0LHRwMCx0dCwwdCx0dDAscDBwdCx0LHAsLHR0LHAwdDAsdHQwcCwwcHQzIAAAAAAAA'
+        command_off: 'rgBrABoEGwwcC8YcCxwbDAodCh0bDAodGwsKHQodGwwKHAscHAsbDBsMChsEGwsbDBsMCh0KHAscGwwcC8cdCh0bDAodChwcCwodGwwKHQoLEAQbFg0EBBSGTmNOOCcAATAWwps4JycWOGOtAAXcAAAAAAAAAAAAAAAAAA=='
