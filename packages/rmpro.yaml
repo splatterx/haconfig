@@ -50,8 +50,8 @@ switch:
         command_off: !secret dimmer_1_b2_off
       lounge_light_3:
         friendly_name: "Lounge Button 3"
-        command_on: !secret dimmer_b3_on
-        command_off: !secret dimmer_b3_off
+        command_on: !secret dimmer_1_b3_on
+        command_off: !secret dimmer_1_b3_off
       lounge_light_dimmer:
         friendly_name: "Lounge Dimmer"
         command_on: !secret dimmer_1_dim_on
