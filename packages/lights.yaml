@@ -1,0 +1,34 @@
+
+automation:
+  - action:
+    - data:
+        entity_id: light.front_door
+      service: light.turn_on
+    - data:
+        entity_id: switch.kitchen_led
+      service: switch.turn_on
+    - data:
+        entity_id: scene.landing_night_light
+      service: scene.turn_on
+    alias: Turn ON dusk lights
+    condition: []
+    id: '1515375463314'
+    trigger:
+    - event: sunset
+      platform: sun
+  - action:
+    - data:
+        entity_id: light.front_door
+      service: light.turn_off
+    - data:
+        entity_id: switch.kitchen_led
+      service: switch.turn_off
+    - data:
+        entity_id: light.upstairs
+      service: light.turn_off
+    alias: Turn OFF dusk lights
+    condition: []
+    id: '1515375525608'
+    trigger:
+    - event: sunrise
+  platform: sun
